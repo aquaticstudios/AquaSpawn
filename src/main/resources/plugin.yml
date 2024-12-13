@@ -1,8 +1,12 @@
+#                                                           Developed by Vasty
+#                                                     (Aquatic Studios @ (C) 2016-2025)
+
 name: AquaSpawn
 version: '${version}'
+authors: [Vasty]
+
 main: dev.club.aquatic.AquaSpawn
 api-version: '1.13'
-authors: [Vasty]
 website: https://github.com/aquaticstudios
 
 commands:
