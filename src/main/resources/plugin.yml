@@ -1,0 +1,10 @@
+name: AquaSpawn
+version: '${version}'
+main: dev.club.aquatic.AquaSpawn
+api-version: '1.13'
+authors: [Vasty]
+website: https://github.com/aquaticstudios
+
+commands:
+  aquaspawn:
+    description: Main command for AquaSpawn plugin
