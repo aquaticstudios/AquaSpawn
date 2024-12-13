@@ -1,11 +1,11 @@
 menu:
   title: '&8AquaSpawn | Menu'
-  size: 4
+  size: 5
 
 items:
   'close':
     name: '&c   ✉ ᴄʟᴏѕᴇ ✉'
-    slot: 31
+    slot: 40
     material: BARRIER
     lore:
       - '&fᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏѕᴇ'
