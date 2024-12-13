@@ -1,0 +1,13 @@
+menu:
+  title: '&8AquaSpawn | Menu'
+  size: 4
+
+items:
+  'close':
+    name: '&c   ✉ ᴄʟᴏѕᴇ ✉'
+    slot: 31
+    material: BARRIER
+    lore:
+      - '&fᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏѕᴇ'
+    multi-click:
+      - '[CLOSE]'
