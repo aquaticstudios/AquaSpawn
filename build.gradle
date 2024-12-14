@@ -5,12 +5,12 @@ plugins {
 
 tasks {
     shadowJar {
-        relocate 'com.cryptomorin.xseries', 'my.plugin.utils'
+        relocate 'com.cryptomorin.xseries', 'dev.club.aquatic'
     }
 }
 
 group = 'dev.club.aquatic'
-version = '0.1'
+version = '1.0'
 
 repositories {
     mavenCentral()
