@@ -3,8 +3,8 @@ menu:
   size: 5
 
 items:
-  'close':
-    name: '&c   ✉ ᴄʟᴏѕᴇ ✉'
+  close:
+    name: '&#FF5E5E   ✉ ᴄʟᴏѕᴇ ✉'
     slot: 40
     material: BARRIER
     lore:

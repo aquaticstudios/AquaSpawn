@@ -1,0 +1,16 @@
+settings:
+  join-spawn: 'Aquatic-Studios'
+  type-spawn: force
+
+join:
+  switch: true
+  message:
+    - '<empty>'
+    - '<center>&7&m-------------------------------'
+    - '<empty>'
+    - '<center>&#43A3FF     ⚓'
+    - '<empty>'
+    - '<center>&fWelcome &a%player_name% &fto the server'
+    - '<empty>'
+    - '<center>&7&m-------------------------------'
+    - '<empty>'

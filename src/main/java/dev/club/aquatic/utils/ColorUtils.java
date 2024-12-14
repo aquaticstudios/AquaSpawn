@@ -5,6 +5,12 @@ import org.bukkit.ChatColor;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * @author Vasty
+ * @date 13/12/2024 @ 23:26
+ * @url https://github.com/vastydev
+ */
+
 public class ColorUtils {
 
     private static final Pattern HEX_PATTERN = Pattern.compile("&#([A-Fa-f0-9]{6})");
