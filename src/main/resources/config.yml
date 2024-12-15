@@ -28,10 +28,10 @@ join:
 messages:
   no-permission: "&#FC5F5F[⚓] You do not have permission to run this command"
   reload: "&#7EFFB1[⚓] Reloaded menu.yml & config.yml successfully"
-  set-spawn: "&#5FC3FC[⚓] The spawn &#A6D9F6'%aquaspawn_name%' &#5FC3FChas just been set with the type &#A6D9F6'%aquaspawn_type%'"
   spawn-type-invalid: "&#5E9DFF[⚓] There was an error check your spawn type &#A6D9F6<first/force>"
   spawn-create: "&#85FF7E[⚓] The spawn &#94DB90'%aquaspawn_name%' &#85FF7Ewas created correctly"
   already-spawn: "&#FC5F5F[⚓] The spawn &#FF7C7C'%aquaspawn_name%' &#FC5F5Falready exists, check the config.yml"
   how-to-create: "&#5E9DFF[⚓] Enter the name of the spawn /aquaspawn create <spawn-name>"
   unknown-command: "&#5E9DFF[⚓] The command you entered does not exist"
   error-set-spawn: "&#5E9DFF[⚓] Check the command /aquaspawn set <spawn-name> <type>"
+  set-spawn: "&#5FC3FC[⚓] The spawn &#A6D9F6'%aquaspawn_name%' &#5FC3FChas just been set with the type &#A6D9F6'%aquaspawn_type%'"
