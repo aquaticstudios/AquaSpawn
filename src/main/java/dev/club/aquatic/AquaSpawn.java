@@ -8,6 +8,8 @@ import dev.club.aquatic.listeners.DefaultListener;
 import dev.club.aquatic.listeners.JoinListener;
 import dev.club.aquatic.listeners.SpawnListener;
 import dev.club.aquatic.manager.MenuManager;
+import dev.club.aquatic.utils.ColorUtils;
+import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
@@ -22,20 +24,20 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class AquaSpawn extends JavaPlugin {
 
     private MenuManager menuManager;
-    private static AquaSpawn instance;
+    String pluginVersion = getDescription().getVersion();
+    String bukkitVersion = Bukkit.getBukkitVersion();
 
+    private static AquaSpawn instance;
     public static AquaSpawn getInstance() {
         return instance;
     }
 
     private static YML menu;
-
     public static YML SetMenu() {
         return menu;
     }
 
     private static YML config;
-
     public static YML SetConfig() {
         return config;
     }
@@ -46,6 +48,14 @@ public final class AquaSpawn extends JavaPlugin {
         menu = new YML("menu");
         config = new YML("config");
         menuManager = new MenuManager(this);
+
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&r"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&b    _   ___"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&3   /_\\ / __|   &bAquaSpawn &f(v" + pluginVersion + "&f) - &aEnabled"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&3  / _ \\__ \\    &fRunning on &7" + bukkitVersion));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&3 /_/ \\_\\___/"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&r"));
+
 
         /**
          * @info Commands - executor.java
@@ -68,7 +78,12 @@ public final class AquaSpawn extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info("AquaSpawn plugin disabled!");
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&r"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&b    _   ___"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&3   /_\\ / __|   &bAquaSpawn &f(v" + pluginVersion + "&f) - &cDisabled"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&3  / _ \\__ \\    &fRunning on &7" + bukkitVersion));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&3 /_/ \\_\\___/"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&r"));
     }
 
     public void Listeners() {
