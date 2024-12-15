@@ -32,13 +32,31 @@ public class Executor implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (args.length == 0) {
-            sender.sendMessage(ColorUtils.Set("&bAquaBox plugin developed by Sxntido - Powered by Aquatic Studios"));
+            sender.sendMessage(ColorUtils.Set("&r"));
+            sender.sendMessage(ColorUtils.Set("&r                     &#64ADFF&lAquaSpawn"));
+            sender.sendMessage(ColorUtils.Set("&r                   &7Update @ 15/12"));
+            sender.sendMessage(ColorUtils.Set("&r"));
+            sender.sendMessage(ColorUtils.Set("&r                    &#5FC3FCℹ Version: &f1.0"));
+            sender.sendMessage(ColorUtils.Set("&r                   &#5FC3FC\uD83D\uDC51 Author: &fVasty"));
+            sender.sendMessage(ColorUtils.Set("&r"));
+            sender.sendMessage(ColorUtils.Set("&r           &#5FC3FCPowered by Aquatic Studios"));
+            sender.sendMessage(ColorUtils.Set("&r"));
             return true;
         }
 
         if (args[0].equalsIgnoreCase("help")) {
             if (sender.hasPermission("aquaspawn.admin")) {
-                sender.sendMessage(ColorUtils.Set("&bAquaBox plugin developed by Sxntido - Powered by Aquatic Studios"));
+                sender.sendMessage(ColorUtils.Set("&r"));
+                sender.sendMessage(ColorUtils.Set("&r                     &#64ADFF&lAquaSpawn"));
+                sender.sendMessage(ColorUtils.Set("&r                  &7Commands @ Vasty"));
+                sender.sendMessage(ColorUtils.Set("&r"));
+                sender.sendMessage(ColorUtils.Set("&r                   &#97D9FF/aquaspawn menu"));
+                sender.sendMessage(ColorUtils.Set("&r                 &#97D9FF/aquaspawn reload"));
+                sender.sendMessage(ColorUtils.Set("&r            &#97D9FF/aquaspawn create &f<name>"));
+                sender.sendMessage(ColorUtils.Set("&r         &#97D9FF/aquaspawn set &f<name> <type>"));
+                sender.sendMessage(ColorUtils.Set("&r"));
+                sender.sendMessage(ColorUtils.Set("&r           &#5FC3FCPowered by Aquatic Studios"));
+                sender.sendMessage(ColorUtils.Set("&r"));
                 return true;
             }
             sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.no-permission")));
