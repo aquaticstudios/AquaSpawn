@@ -79,10 +79,10 @@ public final class AquaSpawn extends JavaPlugin {
     @Override
     public void onDisable() {
         Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&r"));
-        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&b    _   ___"));
-        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&3   /_\\ / __|   &bAquaSpawn &f(v" + pluginVersion + "&f) - &cDisabled"));
-        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&3  / _ \\__ \\    &fRunning on &7" + bukkitVersion));
-        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&3 /_/ \\_\\___/"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&c    _   ___"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&c   /_\\ / __|   &bAquaSpawn &f(v" + pluginVersion + "&f) - &cDisabled"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&c  / _ \\__ \\    &fRunning on &7" + bukkitVersion));
+        Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&c /_/ \\_\\___/"));
         Bukkit.getConsoleSender().sendMessage(ColorUtils.Set("&r"));
     }
 

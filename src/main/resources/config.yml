@@ -16,7 +16,7 @@ join:
   switch: true
   message:
     - "<empty>"
-    - "<center>&7&m------------------------ -----"
+    - "<center>&7&m-----------------------------"
     - "<empty>"
     - "<center>&#43A3FF     ⚓"
     - "<empty>"
