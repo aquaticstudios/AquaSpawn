@@ -1,6 +1,6 @@
 #  Types:
-#    * FIRST - I only sent you once to spawn
-#    * FORCE - It will always take you to the spawn
+#    * First > I only sent you once to spawn
+#    * Force > It will always take you to the spawn
 settings:
   join-spawn: "Aquatic-Studios"
   type-spawn: force
