@@ -21,6 +21,9 @@ import java.util.List;
 
 public class Executor implements CommandExecutor {
 
+    String dateUpdate = "15/12";
+    String pluginVersion = AquaSpawn.getInstance().getDescription().getVersion();
+
     private final AquaSpawn plugin;
     private MenuManager menuManager;
 
@@ -34,9 +37,9 @@ public class Executor implements CommandExecutor {
         if (args.length == 0) {
             sender.sendMessage(ColorUtils.Set("&r"));
             sender.sendMessage(ColorUtils.Set("&r                     &#64ADFF&lAquaSpawn"));
-            sender.sendMessage(ColorUtils.Set("&r                   &7Update @ 15/12"));
+            sender.sendMessage(ColorUtils.Set("&r                   &7Update @ " + dateUpdate));
             sender.sendMessage(ColorUtils.Set("&r"));
-            sender.sendMessage(ColorUtils.Set("&r                    &#5FC3FCℹ Version: &f1.0"));
+            sender.sendMessage(ColorUtils.Set("&r                    &#5FC3FCℹ Version: &f" + pluginVersion));
             sender.sendMessage(ColorUtils.Set("&r                   &#5FC3FC\uD83D\uDC51 Author: &fVasty"));
             sender.sendMessage(ColorUtils.Set("&r"));
             sender.sendMessage(ColorUtils.Set("&r           &#5FC3FCPowered by Aquatic Studios"));
