@@ -2,6 +2,16 @@ menu:
   title: '             &#64ADFF&lAquaSpawn'
   size: 5
 
+# * Tip: Don't touch the name 'close'
+# * If you can modify the name, material, slot, lore
+
+# Actions:
+#  + [MESSAGE] - Send message to player (PlaceholderAPI & Hex supported)
+#  + [SOUND] - Play sounds to the player (https://github.com/CryptoMorin/XSeries)
+#  + [CLOSE] - Action to close the menu
+#  + [TELEPORT] - Teleports to the indicated coordinates
+#  + [COMMAND] - Commands that the player executes
+
 items:
   close:
     name: '&#FF5E5E   ✉ ᴄʟᴏѕᴇ ✉'

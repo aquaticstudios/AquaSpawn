@@ -1,12 +1,22 @@
+#  Types:
+#    * FIRST - I only sent you once to spawn
+#    * FORCE - It will always take you to the spawn
 settings:
   join-spawn: "Aquatic-Studios"
   type-spawn: force
+
+# Variables:
+#  <empty> - An empty space is created
+#  <center> - Messages will be in the center of the chat
+
+# * If you have PlaceholderAPI variable support
+# * Support Colors & HEX: https://www.birdflop.com/resources/rgb/
 
 join:
   switch: true
   message:
     - "<empty>"
-    - "<center>&7&m-----------------------------"
+    - "<center>&7&m------------------------ -----"
     - "<empty>"
     - "<center>&#43A3FF     ⚓"
     - "<empty>"
