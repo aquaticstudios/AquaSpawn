@@ -73,9 +73,9 @@ public final class AquaSpawn extends JavaPlugin {
          * @url bstats.org/plugin/bukkit/AquaSpawn/24161
          * @url bstats.org/plugin/bukkit/Aquatic%20Studios/24142
          */
-        int AquaticBstats = 24142;
-        Metrics bStats = new Metrics(this, AquaticBstats);
-        Metrics AquaSpawn = new Metrics(this, 24161);
+
+        Metrics AquaSpawnBstats = new Metrics(this, 24161);
+        Metrics AquaticStudiosBstats = new Metrics(this, 24142);
     }
 
     @Override
