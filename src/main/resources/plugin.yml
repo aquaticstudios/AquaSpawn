@@ -11,4 +11,7 @@ website: https://github.com/aquaticstudios
 
 commands:
   aquaspawn:
+    aliases:
+      - aspawn
+      - aqspawn
     description: Main command for AquaSpawn plugin
