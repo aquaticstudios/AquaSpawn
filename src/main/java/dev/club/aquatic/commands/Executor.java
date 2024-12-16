@@ -48,7 +48,7 @@ public class Executor implements CommandExecutor {
         }
 
         if (args[0].equalsIgnoreCase("help")) {
-            if (sender.hasPermission("aquaspawn.admin")) {
+            if (sender.hasPermission("aquaspawn.admin") || sender.hasPermission("aquaspawn.help")) {
                 sender.sendMessage(ColorUtils.Set("&r"));
                 sender.sendMessage(ColorUtils.Set("&r                     &#64ADFF&lAquaSpawn"));
                 sender.sendMessage(ColorUtils.Set("&r                  &7Commands @ Vasty"));
@@ -67,7 +67,7 @@ public class Executor implements CommandExecutor {
         }
 
         if (args[0].equalsIgnoreCase("set")) {
-            if (!sender.hasPermission("aquaspawn.admin")) {
+            if (!sender.hasPermission("aquaspawn.admin") || sender.hasPermission("aquaspawn.set")) {
                 sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.no-permission")));
                 return true;
             }
@@ -96,7 +96,7 @@ public class Executor implements CommandExecutor {
         }
 
         if (args[0].equalsIgnoreCase("create")) {
-            if (!sender.hasPermission("aquaspawn.admin")) {
+            if (!sender.hasPermission("aquaspawn.admin") || sender.hasPermission("aquaspawn.create")) {
                 sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.no-permission")));
                 return true;
             }
@@ -173,7 +173,7 @@ public class Executor implements CommandExecutor {
         }
 
         if (args[0].equalsIgnoreCase("menu")) {
-            if (sender.hasPermission("aquaspawn.admin")) {
+            if (sender.hasPermission("aquaspawn.admin") || sender.hasPermission("aquaspawn.menu")) {
                 if (sender instanceof Player) {
                     Player player = (Player) sender;
                     menuManager.openMenu(player);
@@ -187,7 +187,7 @@ public class Executor implements CommandExecutor {
         }
 
         if (args[0].equalsIgnoreCase("reload")) {
-            if (sender.hasPermission("aquaspawn.admin")) {
+            if (sender.hasPermission("aquaspawn.admin") || sender.hasPermission("aquaspawn.reload")) {
                 AquaSpawn.SetMenu().Reload();
                 AquaSpawn.SetConfig().Reload();
                 this.menuManager = new MenuManager(plugin);
