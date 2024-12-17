@@ -60,14 +60,14 @@ public class Executor implements CommandExecutor {
                 sender.sendMessage(ColorUtils.Set("&r"));
                 sender.sendMessage(ColorUtils.Set("&r           &#5FC3FCPowered by Aquatic Studios"));
                 sender.sendMessage(ColorUtils.Set("&r"));
-                return true;
+            } else {
+                sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.no-permission")));
             }
-            sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.no-permission")));
             return true;
         }
 
         if (args[0].equalsIgnoreCase("set")) {
-            if (!sender.hasPermission("aquaspawn.admin") || sender.hasPermission("aquaspawn.set")) {
+            if (!sender.hasPermission("aquaspawn.admin") && !sender.hasPermission("aquaspawn.set")) {
                 sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.no-permission")));
                 return true;
             }
@@ -96,7 +96,7 @@ public class Executor implements CommandExecutor {
         }
 
         if (args[0].equalsIgnoreCase("create")) {
-            if (!sender.hasPermission("aquaspawn.admin") || sender.hasPermission("aquaspawn.create")) {
+            if (!sender.hasPermission("aquaspawn.admin") && !sender.hasPermission("aquaspawn.create")) {
                 sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.no-permission")));
                 return true;
             }
@@ -193,12 +193,11 @@ public class Executor implements CommandExecutor {
                 this.menuManager = new MenuManager(plugin);
                 sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.reload")));
                 return true;
+            } else {
+                sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.no-permission")));
+                return true;
             }
-            sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.no-permission")));
-            return true;
         }
-
-        sender.sendMessage(ColorUtils.Set(AquaSpawn.SetConfig().getString("messages.unknown-command")));
         return false;
     }
 
